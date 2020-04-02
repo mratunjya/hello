@@ -1,0 +1,55 @@
+.header {
+  width: 97%;
+  margin: 10px auto 0;
+}
+
+.logo {
+  width: 8%;
+}
+
+.left {
+  float: left;
+}
+
+.Vetmax {
+  font-size: 5.1vw;
+  margin: 0;
+  margin-top: -7px;
+  font-family: 'Montserrat', sans-serif;
+  color: #015198;
+}
+
+.right {
+  float: right;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .logo {
+    width: 20%;
+  }
+
+  .Vetmax {
+    font-size: 5.6vw;
+    margin-top: 7px;
+    width: 75%;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .logo {
+      width: 60%;
+      margin-left: 20%;
+      float: none;
+    }
+
+    .Vetmax {
+      float: none;
+      font-size: 7.47vw;
+      margin-top: 15px;
+      width: 100%;
+    }
+}
