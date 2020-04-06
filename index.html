@@ -20,26 +20,105 @@
     <br class="no-float">
     <hr class="hr-Vetmax">
     <br>
-    <div class="body-90 card-20">
+    <div class="body-90 card-20 relative" id="ROP">
       <h1 class="h1 center font-raleway-500">Range of Products</h1>
-      <hr class="hr-grey hr-colour-90">
-      <br>
-      <div class="left cent-45 card-10">
+      <hr class="hr-grey hr-colour-90" style="margin-bottom: 2.5%">
+      <div class="left cent-45 card-10 ROP">
         <h2 class="h2 font-raleway-500 center">Product Name</h2>
         <hr class="hr-grey hr-colour-45">
-        <p>KP100 SX Bolus</p>
-        <br><br><br>
       </div>
-      <div class="right cent-45 card-10">
+      <div class="right cent-45 card-10 ROP">
         <h2 class="h2 font-raleway-500 center">Composition</h2>
         <hr class="hr-grey hr-colour-45">
-        <strong>Each uncoated Bolus Contains:</strong>
-          <p>Oxyclozanide 4000 mg</p>
-          <p>Levamisole 2000 mg</p>
-          <p>Silmarine 300 mg</p>
       </div>
-      <br class="no-float">
-      <br>
+      <div class="no-float"></div>
+
+      <div class="absolute" id="description" style="min-width: 90%; left: 5%;right: 5%;">
+        <div class="card-10 bg-white bg-white-grad font-MA-500 description" style="margin: calc(2.5% + 8px) auto;">
+          <div class="left cent-45 center subject-font-size" style="margin-top: 3%;">
+            <strong>KP100 SX Bolus</strong>
+          </div>
+          <div class="right cent-45 object-font-size justify">
+            <strong>Each uncoated Bolus Contains:</strong>
+            <p>Oxyclozanide 4000 mg</p>
+            <p>Levamisole 2000 mg</p>
+            <p>Silmarine 300 mg</p>
+            <strong>Each uncoated Bolus Contains:</strong>
+            <p>Oxyclozanide 4000 mg</p>
+            <p>Levamisole 2000 mg</p>
+            <p>Silmarine 300 mg</p>
+          </div>
+          <div class="no-float"></div>
+        </div>
+        <div class="card-10 bg-white bg-white-grad font-MA-500 description" style="margin: calc(2.5% + 8px) auto;">
+          <div class="left cent-45 center subject-font-size" style="margin-top: 3%;">
+            <strong>KP100 SX Bolus</strong>
+          </div>
+          <div class="right cent-45 object-font-size justify">
+            <strong>Each uncoated Bolus Contains:</strong>
+            <p>Oxyclozanide 4000 mg</p>
+            <p>Levamisole 2000 mg</p>
+            <p>Silmarine 300 mg</p>
+            <strong>Each uncoated Bolus Contains:</strong>
+            <p>Oxyclozanide 4000 mg</p>
+            <p>Levamisole 2000 mg</p>
+            <p>Silmarine 300 mg</p>
+          </div>
+          <div class="no-float"></div>
+        </div>
+        <div class="card-10 bg-white bg-white-grad font-MA-500 description" style="margin: calc(2.5% + 8px) auto;">
+          <div class="left cent-45 center subject-font-size" style="margin-top: 3%;">
+            <strong>KP100 SX Bolus</strong>
+          </div>
+          <div class="right cent-45 object-font-size justify">
+            <strong>Each uncoated Bolus Contains:</strong>
+            <p>Oxyclozanide 4000 mg</p>
+            <p>Levamisole 2000 mg</p>
+            <p>Silmarine 300 mg</p>
+            <strong>Each uncoated Bolus Contains:</strong>
+            <p>Oxyclozanide 4000 mg</p>
+            <p>Levamisole 2000 mg</p>
+            <p>Silmarine 300 mg</p>
+          </div>
+          <div class="no-float"></div>
+        </div>
+        <div class="card-10 bg-white bg-white-grad font-MA-500 description" style="margin: calc(2.5% + 8px) auto;">
+          <div class="left cent-45 center subject-font-size" style="margin-top: 3%;">
+            <strong>KP100 SX Bolus</strong>
+          </div>
+          <div class="right cent-45 object-font-size justify">
+            <strong>Each uncoated Bolus Contains:</strong>
+            <p>Oxyclozanide 4000 mg</p>
+            <p>Levamisole 2000 mg</p>
+            <p>Silmarine 300 mg</p>
+            <strong>Each uncoated Bolus Contains:</strong>
+            <p>Oxyclozanide 4000 mg</p>
+            <p>Levamisole 2000 mg</p>
+            <p>Silmarine 300 mg</p>
+          </div>
+          <div class="no-float"></div>
+        </div>
+      </div>
     </div>
+
+    <script type="text/javascript">
+      var x = document.getElementsByClassName("description");
+      S = 0;
+      for(i = 0; i < x.length; i++)
+      {
+        S = S + x[i].offsetHeight + 20;
+      }
+      S = S + (x.length + 1) * (x[0].offsetWidth * 2.5 / 100 + 8);
+
+      var ROP = document.getElementById('ROP');
+      ROP = ROP.offsetHeight - 22 + "px";
+      document.getElementById('description').style.top = ROP;
+
+      var ROP = document.getElementsByClassName('ROP');
+      x = ROP[0].offsetHeight;
+      y = ROP[1].offsetHeight;
+      ROP[0].style.height = S + "px";
+      ROP[1].style.height = S + "px";
+    </script>
   </body>
 </html>
