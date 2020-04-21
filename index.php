@@ -4,31 +4,23 @@
     <meta charset="utf-8">
     <title>Vetmax Pharmaceuticals Pvt. Ltd.</title>
 
-    <link rel="stylesheet" href="Vetmax.css">
+    <link rel="stylesheet" href="CSS/master.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates:500|Raleway:500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:wght@300|Montserrat|Montserrat+Alternates:500|Raleway:500&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <a href="index.html" class="no-decoration">
-      <div class="header">
-        <img src="Vetmax.png" alt="Vetmax Pharmaceuticals Pvt. Ltd." class="logo left">
-        <h1 class="Vetmax right">Vetmax Pharmaceuticals Pvt. Ltd.</h1>
-      </div>
-    </a>
-    <br class="no-float">
-    <hr class="hr-Vetmax">
-    <br>
+    <?php include 'Modules/Header.html'; ?>
 
     <div class="body-90" style="margin-bottom: 50px">
-      <h1 class="h1 center font-raleway-500 card-20-top">Range of Products</h1>
+      <h1 class="h1 center card-20-top">Range of Products</h1>
       <div class="card-20-bottom">
         <div class="card-10-top body-90" style="margin-top: 2%;">
           <table style="width: 100%">
             <tr>
-              <th style="width: 50%"><h2 class="h2 font-raleway-500">Product Name</h2></th>
-              <th style="width: 50%"><h2 class="h2 font-raleway-500">Composition</h2></th>
+              <th style="width: 50%"><h2 class="h2">Product Name</h2></th>
+              <th style="width: 50%"><h2 class="h2">Composition</h2></th>
             </tr>
           </table>
         </div>
